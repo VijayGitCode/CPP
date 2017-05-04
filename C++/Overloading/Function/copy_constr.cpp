@@ -3,14 +3,15 @@ using namespace std;
 
 class cl
 {
-    cl *p;
+    //cl *p;
     public:
     int a;
     cl(){cout << "Constructor.. " << this << "\n";}
     cl(const cl &o){cout << "Copy Constructor..\n";\
-                    p = new cl();\
-                    p->a = o.a;
-                    cout << "Addr in copy constr is(p): " << (cl *)p << endl;
+     //               p = new cl();\
+     //             p->a = o.a;
+                    a = o.a;
+     //               cout << "Addr in copy constr is(p): " << (cl *)p << endl;
                     cout << "Addr in copy constr is: " << this << endl;}
     ~cl(){cout << "Destructor freeing addr: " << this << endl;}
 };
